@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAC Programming World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="#home">JAC<span>Programming</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">MY PROGRAMMING PORTFOLIO</p>
+    <h1>Welcome to <span>JAC Programming World</span></h1>
+    <p class="hero-text">
+      Explore my Python practical programs, programming concepts, and coding work.
+      This website is built using HTML, CSS and JavaScript.
+    </p>
+    <div class="hero-buttons">
+      <a class="primary-btn" href="#programs">Explore Python Programs</a>
+      <a class="secondary-btn" href="#about">About Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-heading">
+    <p>ABOUT</p>
+    <h2>About This Website</h2>
+  </div>
+  <div class="about-box">
+    <p>
+      Welcome to <strong>JAC Programming World</strong>. This portfolio presents my Python practical programs
+      in an organized format. The programs cover calculations, conditional statements, functions, patterns,
+      lists, tuples, sets, dictionaries, recursion, graphs, strings and file handling.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="section skills-section">
+  <div class="section-heading">
+    <p>SKILLS</p>
+    <h2>Technologies I Am Learning</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill">Python</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+  </div>
+</section>
+
+<section id="programs" class="section">
+  <div class="section-heading">
+    <p>PYTHON PRACTICALS</p>
+    <h2>My Python Programs</h2>
+    <p class="section-description">Click <strong>View Programs</strong> to open the Python code. Use the Copy button to copy it.</p>
+  </div>
+
+  <div class="programs-grid">
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 3</span>
+          <h3>Basic Calculations</h3>
+        </div>
+        <button class="view-btn" data-target="code-0">View Programs</button>
+      </div>
+      <div id="code-0" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-0">Copy Code</button>
+        </div>
+        <pre id="copy-0"><code>&quot;&quot;&quot;practical-3(a)
+
+AIM: Write a program to convert temperature from Celsius to Fahrenheit. Equation to convert Celsius to Fahrenheit: 𝐹 = (9/5) ∗ 𝐶 + 32
+&quot;&quot;&quot;
+
+celsius = float(input(&quot;enter temperature in celsius no: &quot;))
+fahrenheit = (9/5)*celsius+32
+
+print(fahrenheit)
+
+fahrenheit=float(input(&quot;enter the fahrenheit no:&quot;))
+celsius=(fahrenheit-32)*5/9
+
+print(celsius)
+
+
+
+&quot;&quot;&quot;practical-3(b)
+
+AIM: Write a program to compute the slope of a line between two points (x1, y1) and (x2, y2). 𝑆𝑙𝑜𝑝𝑒 = ( y2 - y1 )/(x2 - x1)
+&quot;&quot;&quot;
+
+x1=23
+x2=25
+y1=65
+y2=85
+slope = ( y2 - y1 )/(x2 - x1)
+midpoint_x = x1+x2/2
+midpoint_y = y1+y2/2
+print(&quot;slope of line: &quot;)
+print(slope)
+
+&quot;&quot;&quot;practical-3(c)
+
+AIM: Write a program to calculate simple and compound interest. 𝑆𝑖𝑚𝑝𝑙𝑒 𝐼𝑛𝑡𝑒𝑟𝑒𝑠𝑡 = (P * R * T)/(100 ) 𝐶𝑜𝑚𝑝𝑜𝑢𝑛𝑑 𝐼𝑛𝑡𝑒𝑟𝑒𝑠𝑡 = principle * (pow((1 + rate / 100), time))
+&quot;&quot;&quot;
+
+principle=5000
+rate= 15.11
+time = 15.11
+n = 3
+compound_interest = principle * (1 + rate / (100 * n))**(n * time)
+print(&quot;Simple Interest&quot;, principle * rate * time/100)
+print(&quot;Compound interest is&quot;, compound_interest)
+
+
+
+&quot;&quot;&quot;practical-3(d)
+
+AIM: Write a program to get change values in Quarter, Dime, Nickels and Pennies, and calculate the value of change in Dollars. Consider Quarter = 0.25  ,Dime=0.10 , Nickels = 0.05  andPenny=0.01 .
+&quot;&quot;&quot;
+
+quarter = int(input(&quot;enter number:&quot;))
+dime = int(input(&quot;enter number:&quot;))
+nickels = int(input(&quot;enter number:&quot;))
+penny = int(input(&quot;enter number:&quot;))
+
+
+total = 25*quarter + 10*dime + 5*nickels + penny
+dollars = total/100.0
+print(dollars)
+
+quarter=int(input(&quot;enter number:&quot;))
+dime=int(input(&quot;enter number:&quot;))
+nickels=int(input(&quot;enter number:&quot;))
+
+penny=int(input(&quot;enter number:&quot;))
+
+total=25*quarter+10*dime+5*nickels+pennyj
+dollars=total/100.00
+print(dollars)
+
+&quot;&quot;&quot;practical-3(e)
+
+AIM: Write a program to find a maximum of given three numbers (Use ternary operator).
+&quot;&quot;&quot;
+
+a = int(input(&quot;Enter no:&quot;))
+b = int(input(&quot;Enter no:&quot;))
+c = int(input(&quot;Enter no:&quot;))
+
+max = (a if (a &gt; b and a &gt; c) else
+     (b if (b &gt; a and b &gt; c) else c))
+print(&quot;largest number no: &quot;,max )
+
+&quot;&quot;&quot;practical-3(f)
+
+AIM: Write a program to calculate area and volume of Sphere. 𝐴𝑟𝑒𝑎 𝑜𝑓 𝑆𝑝ℎ𝑒𝑟𝑒 =4πr^2 𝑉𝑜𝑙𝑢𝑚𝑒 𝑜𝑓 𝑆𝑝ℎ𝑒𝑟𝑒 =4/3 πr^3
+&quot;&quot;&quot;
+
+import math
+r=float(input(&quot;Enter the r of a sphere&quot;))
+area=4*math.pi*pow(r,2)
+volume=(4/3)*math.pi*pow(r,3)
+
+print(&quot;surface area:&quot;)
+print(area)
+print(&quot;volume:&quot;)
+print(volume)
+
+
+
+&quot;&quot;&quot;practical-3(g)
+
+AIM: Write a program that computes the real roots of a given quadratic equation (Use math library). DiscriminantΔ = b 2 − 4 ac
+
+RealRoots= −b±√b 2−4ac 2a
+&quot;&quot;&quot;
+
+import math
+a=int(input(&quot;Enter the value of a: &quot;))
+b=int(input(&quot;Enter the value of b: &quot;))
+c=int(input(&quot;Enter the value of c: &quot;))
+d=(b*b)-(4*a*c)
+print(d)
+if d&gt;0:
+  root1=(-b-math.sqrt(d))/(2*a)
+  root2=(-b+math.sqrt(d))/(2*a)
+  print(&quot;The roots of equation are&quot;,root1)
+  print(&quot;The roots of equation are&quot;,root2)
+else:
+ print(&quot;This equation has no real roots&quot;)
+
+
+
+&quot;&quot;&quot;practical-3(h)
+
+write a program to etermine the length of ladder required to reached a given height when leaned against the house. the height and the angle of the ladder are given as input (use math library)
+&quot;&quot;&quot;
+
+height = int(input(&quot;Enter the height of wall: &quot;))
+angle = int(input(&quot;Enter the angle  the ladder: &quot;))
+length = height/math.sin(math.radians(angle))
+print(length)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 4</span>
+          <h3>Conditions and Decisions</h3>
+        </div>
+        <button class="view-btn" data-target="code-1">View Programs</button>
+      </div>
+      <div id="code-1" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-1">Copy Code</button>
+        </div>
+        <pre id="copy-1"><code>&quot;&quot;&quot;practical-4(a)
+
+Aim:
+A year is a Leap year if it is divisible by 4, unless it is a century year that is not divisible by 400 (1800 and 1900 are not leap years, 1600 and 2000 are leap years). Write a program that calculates whether a given year is a leap year or not.
+&quot;&quot;&quot;
+
+year = int(input(&quot;enter a year: &quot;))
+
+if (year % 400 == 0) and (year % 100 == 0):
+    print(&quot;{0} is a leap year&quot;.format(year))
+
+elif (year % 4 ==0) and (year % 100 != 0):
+    print(&quot;{0} is a leap year&quot;.format(year))
+
+else:
+    print(&quot;{0} is not a leap year&quot;.format(year))
+
+&quot;&quot;&quot;practical-4(b)
+
+Many companies pay time-and-a-half for any hours worked above 40 hours in a given week. Write a program to input the number of hours worked and hourly rate and calculate the total wages for the week.
+&quot;&quot;&quot;
+
+hours_worked = float(input(&#x27;Enter the number of hours worked: &#x27;))
+hourly_rate = float(input(&#x27;Enter the hourly rate: &#x27;))
+
+if hours_worked &gt; 40:
+    overtime = hours_worked - 40
+    total_wages = 40 * hourly_rate + 1.5 * overtime * hourly_rate
+else:
+    total_wages = hours_worked * hourly_rate
+
+print(&#x27;The total wages for the week are: &#x27;, total_wages)
+
+l=&quot;hiren&quot;
+print(l[2],l[3])
+
+l=[0,1,2,3,4]
+for i in range(len(l)):
+    l[i]=l[i]**2
+print(l)
+
+&quot;&quot;&quot;practical-4(c)
+
+The Body Mass Index is calculated as a person&#x27;s height(in meters). If the BMI is between 19 and 25, the person is healthy. If the BMI is below 19, then the person is underweight. If theBMI is above 25, then the person is overweight. Write a program to get a person&#x27;s weight(in kgs) nad height(in cms) and display a message whether the person is healthy, underweight or overweight. BMI= weight in kg/(height in m)2
+&quot;&quot;&quot;
+
+weight = float(input(&#x27;enter the weight:&#x27;))
+height = float(input(&#x27;enter the height:&#x27;))
+BMI = int(weight/(height/100)**2)
+if BMI in range(19,25):
+   print(&#x27;person is healthy&#x27;)
+elif(BMI&lt;19):
+  print(&#x27;person is underweight&#x27;)
+elif(BMI&gt;25):
+  print(&#x27;person is overweight&#x27;)
+else:
+  print(&#x27;invalid BMI&#x27;)
+
+&quot;&quot;&quot;pratcial4(D):write a program to read the marks and assign a grade to a student.grading system :a(&gt;=90),b(80-89),c(70-79),d(60-69),e(50-59),f(&lt; 50)(use the switch case )&quot;&quot;&quot;
+
+marks = int(input(&quot;enter marks: &quot;))
+def grade(marks):
+ if (marks&gt;=90):
+    print(&quot;A grade&quot;)
+ elif(marks in range(80,89)):
+    print(&quot;B grade&quot;)
+ elif(marks in range(70,79)):
+    print(&quot;C grade&quot;)
+ elif(marks in range(60,69)):
+  print(&quot;D grade&quot;)
+ elif(marks in range(50,59)):
+  print(&quot;E grade&quot;)
+ else:
+  print(&quot;none&quot;)
+
+
+grade(marks)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 5</span>
+          <h3>Functions and Patterns</h3>
+        </div>
+        <button class="view-btn" data-target="code-2">View Programs</button>
+      </div>
+      <div id="code-2" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-2">Copy Code</button>
+        </div>
+        <pre id="copy-2"><code>&quot;&quot;&quot;pratcial:5(a)
+
+write a program to read n number from usrs and calculate the average of those n number.
+&quot;&quot;&quot;
+
+def average(*args):
+  c = args[0:]
+  print(sum(c))
+  print(len(c))
+  avg = sum(c)/ len(c)
+  return avg
+average(1,4,5,7,10)
+
+&quot;&quot;&quot;practical:5(b)
+
+write a program to print below a pattern:
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+&quot;&quot;&quot;
+
+def pattern(rows):
+  k = 2 * rows - 2
+  for i in range(0, rows):
+      for j in range(0, k):
+          print(end=&quot; &quot;)
+      k = k - 1
+      for j in range(0, i + 1):
+          print(&quot;* &quot;, end=&quot;&quot;)
+      print(&quot;&quot;)
+pattern(6)
+
+&quot;&quot;&quot;pratical:5(c)
+write a program to print below a pattern:
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+&quot;&quot;&quot;
+
+def pattern (rows):
+  for i in range(1, rows + 1):
+      for j in range(1, i + 1):
+          print(j, end=&#x27; &#x27;)
+      print(&#x27;&#x27;)
+pattern(5)
+
+
+
+&quot;&quot;&quot;pratical:5(d)
+1/3 + 3/5 + 5/7 +
+&quot;&quot;&quot;
+
+def series():
+  sum = 0
+  for i in range(1,100,2):
+    sum += i/(i+2)
+  print(&quot;Sum of the Series = &quot;,sum)
+series()
+
+# Function to display ASCII character table
+def display_ascii_table():
+    start_char = 33  # ASCII value for &#x27;!&#x27;
+    end_char = 126   # ASCII value for &#x27;~&#x27;
+    chars_per_line = 5
+
+    print(f&quot;{&#x27;Char&#x27;:^5} {&#x27;Dec&#x27;:^5} {&#x27;Hex&#x27;:^5} &quot; * chars_per_line)
+    print(&#x27;-&#x27; * 21 * chars_per_line)
+
+    for i in range(start_char, end_char + 1):
+        char = chr(i)
+        dec_val = i
+        hex_val = hex(i)
+
+        print(f&quot;{char:^5} {dec_val:^5} {hex_val:^5}&quot;, end=&#x27; &#x27;)
+
+        if (i - start_char + 1) % chars_per_line == 0:
+            print()
+
+    if (end_char - start_char + 1) % chars_per_line != 0:
+        print()
+
+# Call the function to display the table
+display_ascii_table()
+
+&quot;&quot;&quot;pratical:5(E)
+A positive integer is called a perfect number if it
+is equal to the sum of all of its positive divisors,
+excluding itself. For example, 6 is the first
+perfect number, because 6 = 3 + 2 + 1, the next
+is 28 = 14 + 7 + 4 + 2 + 1. There are four perfect
+numbers that are less than 10,000. Write a
+program to find these four numbers.
+&quot;&quot;&quot;
+
+def perfact(num):
+  sum = 0
+  for i in range(1,num):
+    if num % i == 0:
+      sum += i
+  return sum == num
+for n in range(1,10000):
+  if(perfact(n)):
+    print(&quot;Perfect numbers less than 10,000:&quot;, n)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 6</span>
+          <h3>Lists and Number Programs</h3>
+        </div>
+        <button class="view-btn" data-target="code-3">View Programs</button>
+      </div>
+      <div id="code-3" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-3">Copy Code</button>
+        </div>
+        <pre id="copy-3"><code>&quot;&quot;&quot;pratical:6(A)
+Write a program to perform the below operations
+on the list:
+ Create a list.
+ Add/Remove an item to/from a list.
+ Get the number of elements in the list.
+ Access elements of the list using the index.
+ Sort the list.
+ Reverse the list.
+&quot;&quot;&quot;
+
+list1 = [1,2,3,4,5]
+
+list1.append(6)
+print(&#x27;add number =&gt;&#x27;,list1)
+
+list1.remove(6)
+print(&#x27;remove number =&gt;&#x27;,list1)
+
+print(&#x27;length of =&gt;&#x27;,len(list1))
+
+print(&#x27;update the list with accessing list&#x27;,list1[2])
+
+list1.sort()
+print(&#x27;sort list =&gt;&#x27;,list1)
+
+list1.reverse()
+print(&#x27;reverse list =&gt;&#x27;,list1)
+
+&quot;&quot;&quot;practical:6(BWrite a program to read n numbers from a user
+and print:
+● Number of positive numbers.
+● Number of negative numbers.
+● Number of zeros.
+● Number of odd numbers.
+● Number of even numbers.
+● Average of all numbers.
+&quot;&quot;&quot;
+
+def analyze_numbers():
+    n = int(input(&quot;Enter the number of elements: &quot;))
+
+    # Initialize counters and sum
+    positive_count = 0
+    negative_count = 0
+    zero_count = 0
+    odd_count = 0
+    even_count = 0
+    total_sum = 0
+
+    # Read numbers and analyze them
+    for i in range(n):
+        number = float(input(f&quot;Enter number {i+1}: &quot;))
+        total_sum += number
+
+        if number &gt; 0:
+            positive_count += 1
+        elif number &lt; 0:
+            negative_count += 1
+        else:
+            zero_count += 1
+
+        if number % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+
+    # Calculate average
+    print(&quot;Sum of = &quot;,total_sum)
+    average = total_sum / n
+
+    # Print results
+    print(&quot;Number of positive numbers: {positive_count}&quot;)
+    print(&quot;Number of negative numbers:&quot;, negative_count)
+    print(f&quot;Number of zeros: {zero_count}&quot;)
+    print(f&quot;Number of odd numbers: {odd_count}&quot;)
+    print(f&quot;Number of even numbers: {even_count}&quot;)
+    print(f&quot;Average of all numbers: {average}&quot;)
+
+# Call the function
+analyze_numbers()
+
+
+
+&quot;&quot;&quot;practical-6(c)
+Write a program that counts the occurrences
+of each digit in a string. The program counts
+how many times a digit appears in the string.
+For example, if the input is &quot;12203AB3&quot;,
+then the output should output 0 (1 time), 1 (1
+time), 2 (2 times), 3 (2 times).
+&quot;&quot;&quot;
+
+user_input = input(&#x27;enter the string&#x27;)
+
+for i in range(10):
+  count = user_input.count(str(i))
+  print(f&quot;{i} occure {count} times &quot;)
+
+&quot;&quot;&quot;practical-6(d)
+Write a program to eliminate duplicate values in
+the list.
+&quot;&quot;&quot;
+
+def remove_duplicates(input_list):
+    # Convert the list to a set to eliminate duplicates, then convert it back to a list
+    unique_list = list(set(input_list))
+
+    # Optionally, sort the list to maintain order
+    #unique_list.sort()
+
+    return unique_list
+
+# Example usage
+input_list = [1, 2, 3, 2, 4, 5, 1, 6, 3, 7]
+print(&quot;Original List:&quot;, input_list)
+
+unique_list = remove_duplicates(input_list)
+print(&quot;List after removing duplicates:&quot;, unique_list)
+
+list1 = [10,20,20,30,40,40,50]
+list2=[]
+
+for i in list1:
+  if i not in list2:
+    list2.append(i)
+print(list2)
+
+&quot;&quot;&quot;Write a program that defines a function to determine whether input number n is prime or not. A positive whole number n &gt; 2 is prime, if no number between 2 and 𝑛 (inclusive) evenly divides n. If n is not prime, the program should quit as soon as it finds a value that evenly divides n.
+
+&quot;&quot;&quot;
+
+def is_prime(n):
+    if n &lt;= 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            print(f&quot;{n} is not prime; divisible by {i}.&quot;)
+            return False
+    print(f&quot;{n} is prime.&quot;)
+    return True
+
+# Example usage:
+number = int(input(&quot;Enter a positive whole number greater than 2: &quot;))
+is_prime(number)
+
+&quot;&quot;&quot;practical-6(E)
+A list contains the average daily temperature(in
+degree Celsius) of a city over a particular week.
+Write a Python code to swap the highest and the
+lowest temperatures.
+temperatures = [34, 40, 29, 33, 42, 37, 39 ]
+&quot;&quot;&quot;
+
+temp = [34,40,29,33,42,37,39]
+
+print(f&quot;the max is:{max(temp)}&quot;)
+print(f&quot;the min is:{min(temp)}&quot;)
+
+max_index = temp.index(max(temp))
+min_index = temp.index(min(temp))
+
+temp[max_index],temp[min_index] = temp[min_index],temp[max_index]
+print(f&quot;the list after swaped:{temp}&quot;)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 7</span>
+          <h3>Tuples, Sets and Dictionaries</h3>
+        </div>
+        <button class="view-btn" data-target="code-4">View Programs</button>
+      </div>
+      <div id="code-4" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-4">Copy Code</button>
+        </div>
+        <pre id="copy-4"><code>&quot;&quot;&quot;practical-7(A)
+Write a program to perform below operations on
+tuple:
+ Create a tuple with different data types.
+ Print tuple items.
+ Convert tuple into a list.
+ Remove data items from a list.
+ Convert list into a tuple.
+ Print tuple items.
+&quot;&quot;&quot;
+
+Tuple = (3,&quot;Hello&quot;,356,False)
+print(&quot;Tuple:&quot;,Tuple)
+print(&quot;indexing on tuple :&quot;,Tuple[1])
+print(&quot;negtive indexing on tuple :&quot;,Tuple[-1])
+print(&quot;slicing on tuple :&quot;,Tuple[2:5])
+
+List = list(Tuple)
+print(&quot;Convert into List:&quot;,List)
+List.pop()
+print(&quot;remove data from list:&quot;,List)
+Tuple = tuple (List)
+print(&quot;convert to a tuple:&quot;,Tuple)
+
+&quot;&quot;&quot;practical-7(b)
+Write a program to perform below operations on
+set:
+ Create two different sets with the data.
+ Print set items.
+ Add/remove items in/from a set.
+ Perform operations on sets: union, intersection,
+difference, symmetric difference, check subset of
+another set.
+&quot;&quot;&quot;
+
+
+
+a=set({10,20,30,40})
+b=set({30,40,50,60})
+print(&quot;First set:&quot;,a)
+print(&quot;Second set:&quot;,b)
+a.add(50)
+a.remove(40)
+print(&quot;after add/remove element of set&quot;,a)
+x=a.union(b)
+y=a.intersection(b)
+print(&quot;union:&quot;,x)
+print(&quot;intersection:&quot;,y)
+print(&quot;Difference:&quot;,y.difference(b))
+print(&quot;Symmertric Differece:&quot;,y.symmetric_difference(b))
+print(&quot;Subset:&quot;,y.issubset(b))
+
+s=(input(&#x27;enter your data:&#x27;))
+for i in range(10):
+  y=s.count(str(i))
+  print(i,&quot;occurs&quot;,y,&quot;times&quot;)
+
+temp={ &quot;sunday&quot;:40,
+      &quot;monday&quot;:39,
+      &quot;tuesday&quot;:41,
+      &quot;wednesday&quot;:42,
+      &quot;thrusday&quot;:40.5,
+      &quot;friday&quot;:41.5,
+      &quot;satruday&quot;:40}
+for i,j in temp.items():
+  if(j&gt;=40 and j&lt;=50):
+    print(i,j)
+
+L1=[&quot;hello&quot;,&quot;fgg&quot;]
+L1.append([&quot;gdsg&quot;])
+print(L1)
+
+&quot;&quot;&quot;practical-7(c)Write a program to perform below operations on
+dictionary:
+ Create a dictionary.
+ Print dictionary items.
+ Add/remove key-value pair in/from a
+dictionary.
+ Check whether a key exists in a dictionary.
+ Iterate through a dictionary.
+ Concatenate multiple dictionaries.
+&quot;&quot;&quot;
+
+A={&#x27;Name&#x27;:&#x27;vatsal&#x27;,&#x27;Age&#x27;:17}
+print(&quot;Element in dictionary are:&quot;)
+print(A)
+A[&#x27;Address&#x27;]=&#x27;adajan&#x27;
+print(&quot;Add element:&quot;)
+print(A)
+A.pop(&#x27;Address&#x27;)
+print(&quot;Remove element:&quot;)
+print(A)
+key=&#x27;Name&#x27;
+if key in A.keys():
+ print(&quot;Present in dictionary&quot;)
+ print(&quot;value =&quot;, A[key])
+else:
+ print(&quot;Not present&quot;)
+print(&quot;Iteration of Dictionary:&quot;)
+for x in A:
+ print(x)
+A_1={&#x27;City&#x27;:&#x27;Surat&#x27;,&#x27;Address&#x27;:&#x27;adajan&#x27;}
+A.update(A_1)
+print(&#x27;Updated dictionary:&#x27;)
+print(A)
+d_1 = {&#x27;A&#x27;: 15, &#x27;B&#x27;: 10, &#x27;C&#x27; : 12 }
+d_2 = {&#x27;E&#x27;: 18,&#x27;B&#x27;: 20,&#x27;D&#x27; : 16 }
+d_1.update(d_2)
+print(&#x27;Updated dictionary:&#x27;)
+print(d_1)
+
+&quot;&quot;&quot;practical:7(d)
+Write a program that is given a dictionary
+containing the average daily temperature for
+each day of the week, and prints all the days on
+which the average temperature was between 40
+and 50 degrees.
+&quot;&quot;&quot;
+
+weekDay = {&#x27;sunday:&#x27;:38,
+           &#x27;monday:&#x27;:41,
+           &#x27;Tuesday:&#x27;:45,
+           &#x27;wednesday:&#x27;:39,
+           &#x27;friday:&#x27;:42,
+           &#x27;saturday:&#x27;:42}
+for key,value in weekDay.items():
+  if(value&gt;=40 and value&lt;=50):
+    print(key,value)
+
+&quot;&quot;&quot;practical-7(e)Write a Python script to check whether a given
+key already exists in a dictionary. If it does, drop
+that key from the dictionary. If it does not, add
+that key and corresponding value to the
+dictionary
+&quot;&quot;&quot;
+
+my_dict = {&#x27;a&#x27;: 1, &#x27;b&#x27;: 2, &#x27;c&#x27;: 3}
+key = &#x27;b&#x27;
+value = 5
+
+if key in my_dict:
+
+    del my_dict[key]
+    print(f&quot;Key &#x27;{key}&#x27; found and removed.&quot;)
+else:
+
+    my_dict[key] = value
+    print(f&quot;Key &#x27;{key}&#x27; not found. Added with value {value}.&quot;)
+
+
+print(&quot;Updated dictionary:&quot;, my_dict)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 8</span>
+          <h3>Functions, Loans and Recursion</h3>
+        </div>
+        <button class="view-btn" data-target="code-5">View Programs</button>
+      </div>
+      <div id="code-5" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-5">Copy Code</button>
+        </div>
+        <pre id="copy-5"><code>&quot;&quot;&quot;practical:8(a)
+Write a program that defines a function (shuffle)
+to scramble a list into a random order, like
+shuffling a deck of cards
+&quot;&quot;&quot;
+
+import random
+list1 = [9,1,7,3,0,1,8,1,9,2]
+
+
+def shuffle(list1):
+  random.shuffle(list1)
+  return list1
+
+shuffle(list1)
+
+&quot;&quot;&quot;**practical:8(b)**
+Write a program that defines a function to return
+a new list by eliminating the duplicate values in
+the list.
+
+&quot;&quot;&quot;
+
+l = [10,10,11,13,8,8,1,2,1,2]
+list1 = []
+def duplicate(l):
+  for i in l:
+    if i not in list1:
+      list1.append(i)
+  return list1
+duplicate(l)
+
+&quot;&quot;&quot;practical:8(F) Write a program that lets the user enter the loan
+amount, number of years, and interest rate, and
+defines a function to calculate monthly EMI,
+total payment and display the amortization
+schedule for the loan.
+&quot;&quot;&quot;
+
+def loan():
+ p=float(input(&quot;Enter the Amount of Loan:&quot;))
+ i=int(input(&quot;Enter the Interest:&quot;))
+ y=int(input(&quot;Enter Total No. of Year:&quot;))
+ total_interest=round(p*y*i)/100
+ total_amount=round(p+total_interest)
+ emi=round(total_amount/(y*12))
+ print(&quot;interest:&quot;,total_interest)
+ print(&quot;amount:&quot;,total_amount)
+ print(&quot;EMI:&quot;,emi)
+ print(&quot;Principal EMI  Interest Balance&quot;)
+ balance=total_amount-emi
+ print(total_amount,&quot;\t&quot;,emi,&quot;\t&quot;,i,&quot;\t&quot;,balance)
+ for i in range(1,y*12):
+   total_amount=balance
+   balance=total_amount-emi
+   print(total_amount,&quot;\t&quot;,emi,&quot;\t&quot;,i,&quot;\t&quot;,balance)
+
+loan()
+
+ct
+
+&quot;&quot;&quot;Practical 8(C) Write a program to print Fibonacci sequence up to n numbers using recursion. Fibonacci sequence is defined as below:
+𝐹𝑖𝑏𝑜𝑛𝑎𝑐𝑐𝑖 𝑆𝑒𝑞𝑢𝑒𝑛𝑐𝑒= 1 1 2 3 5 8 13 21…
+𝑡ℎ
+𝑤ℎ𝑒𝑟𝑒 𝑛   𝑡𝑒𝑟𝑚 𝑥   =   𝑥	+ 𝑥
+𝑛	𝑛−1	𝑛−2
+
+&quot;&quot;&quot;
+
+# Function to calculate the Fibonacci number using recursion
+def fibonacci(n):
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Function to print Fibonacci sequence up to &#x27;n&#x27; numbers
+def print_fibonacci_sequence(n):
+    for i in range(1, n+1):
+        print(fibonacci(i), end=&quot; &quot;)
+
+# Example usage
+n = int(input(&quot;Enter the number of terms: &quot;))
+print(&quot;Fibonacci Sequence:&quot;)
+print_fibonacci_sequence(n)
+
+&quot;&quot;&quot;Practical 8(D) Write a program that defines a function to determine whether input number n is prime or not. A positive whole number n &gt; 2 is prime, if no
+number between 2 and 𝑛 (inclusive) evenly divides n. If n is not prime, the program should quit as soon as it finds a value that evenly divides n.
+
+&quot;&quot;&quot;
+
+def is_prime(n):
+    # If the number is less than 2, it&#x27;s not prime
+    if n &lt;= 1:
+        return False
+
+    # Check divisibility starting from 2 to sqrt(n)
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False  # If n is divisible by i, it&#x27;s not prime
+
+    # If no divisors found, the number is prime
+    return True
+
+# Example usage
+n = int(input(&quot;Enter a number: &quot;))
+if is_prime(n):
+    print(f&quot;{n} is a prime number.&quot;)
+else:
+    print(f&quot;{n} is not a prime number.&quot;)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 9</span>
+          <h3>Math, Dates and Graphs</h3>
+        </div>
+        <button class="view-btn" data-target="code-6">View Programs</button>
+      </div>
+      <div id="code-6" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-6">Copy Code</button>
+        </div>
+        <pre id="copy-6"><code>&quot;&quot;&quot;Practical 9(E)Write a program that defines a function to find the GCD of two numbers using the algorithm below. The greatest common divisor (GCD) of two values can be computed using Euclid&#x27;s algorithm. Starting with the values m and n, we repeatedly apply the formula: n, m = m, n%m until m is 0. At that point, n is the GCD of the original m and n (Use Recursion).
+
+practical:9(A) Write a program that defines functions (mean
+and deviation), that computes mean and standard
+deviation of given numbers. The formula for the
+mean and standard deviation of n numbers is
+given as:
+mean = ∑ Xi n
+i=1 =
+X1 + X2 + ⋯ + Xn
+n
+
+deviation = √
+
+∑ (Xi−mean)2
+n
+i=1
+n−1
+&quot;&quot;&quot;
+
+def mean(number):
+  return sum(number)/len(number)
+
+def deviation(number):
+  mean_val = mean(number)
+  variances = [(x - mean_val)**2 for x in number]
+  return(sum(variances)/(len(number)-1))**0.5
+
+number = [1,2,3,4,5]
+
+mean_val = mean(number)
+dev_val = deviation(number)
+
+print(&#x27;mean of the given number is &#x27;,mean_val)
+print(&#x27;standard deviation of the given number is &#x27;,dev_val)
+
+&quot;&quot;&quot;practical:9(B)Write a program to print the dates of all the
+Sundays in a given year.
+&quot;&quot;&quot;
+
+import datetime
+
+year = int(input(&quot;Enter the Year : &quot;))
+
+first_sunday = datetime.date(year,1,1)
+
+if first_sunday.isoweekday() != 7:
+  first_sunday = first_sunday + datetime.timedelta(7-first_sunday.isoweekday())
+
+while first_sunday.year == year:
+  print(first_sunday)
+  first_sunday=first_sunday + datetime.timedelta(days=7)
+
+&quot;&quot;&quot;practical:9(C)Write a program to display a graph for ReLU
+(Rectified Linear Unit) function. ReLU function
+is defined as below: y = max (0, x) Consider the
+range of x from -5 to 5.
+&quot;&quot;&quot;
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(-5,6)
+
+def ReLU(x):
+  return np.maximum(0,x)
+
+y=ReLU(x)
+
+plt.title(&#x27;relu function&#x27;)
+plt.plot(x,y)
+plt.grid()
+plt.show()
+
+&quot;&quot;&quot;practical:9(D)Write a program to create a list representing the
+results of 100 students in a test, where each
+element represents a student&#x27;s marks (between 0
+to 10), and display a histogram for the result.
+&quot;&quot;&quot;
+
+import random
+import matplotlib.pyplot as plt
+
+# Generate a list of 100 student marks between 0 and 10
+student_marks = [random.randrange(0, 10) for _ in range(100)]
+
+# Display a histogram
+plt.hist(student_marks, range(0, 10), edgecolor=&#x27;yellow&#x27;)
+plt.xlabel(&#x27;Marks&#x27;)
+plt.ylabel(&#x27;Number of Students&#x27;)
+plt.title(&#x27;Distribution of Student Marks&#x27;)
+
+plt.show()
+
+&quot;&quot;&quot;# New Section
+
+practical:9(E) Create a user defined module with simple functions for: addition, subtraction, multiplication, division, modulo, square, factorial. Write a program to import the module and access functions defined in the module.
+&quot;&quot;&quot;
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%writefile math_operations4.py
+# import math
+# def add(x, y):
+#     return x + y
+# 
+# def subtract(x, y):
+#     return x - y
+# 
+# def multiply(x, y):
+#     return x * y
+# 
+# def divide(x, y):
+#     return x / y
+# 
+# def modulo(x, y):
+#     return x % y
+# 
+# def square(x):
+#     return x ** 2
+# 
+# def factorial(x):
+#     return math.factorial(x)
+
+import math_operations4 as mo
+
+def main():
+    # Test the functions in the module
+    print(&quot;Addition: &quot;, mo.add(5, 3))
+    print(&quot;Subtraction: &quot;, mo.subtract(5, 3))
+    print(&quot;Multiplication: &quot;, mo.multiply(5, 3))
+    print(&quot;Division: &quot;, mo.divide(5, 3))
+    print(&quot;Modulo: &quot;, mo.modulo(5, 3))
+    print(&quot;Square: &quot;, mo.square(5))
+    print(&quot;Factorial: &quot;, mo.factorial(5))
+
+# Execute the main function
+main()</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 10</span>
+          <h3>String Programs</h3>
+        </div>
+        <button class="view-btn" data-target="code-7">View Programs</button>
+      </div>
+      <div id="code-7" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-7">Copy Code</button>
+        </div>
+        <pre id="copy-7"><code>&quot;&quot;&quot;# New Section
+
+practical:10(a)Write a program to check whether a given string
+is palindrome or not.
+&quot;&quot;&quot;
+
+my_str = str(input(&quot;enter the string:&quot;))
+
+rev_str = reversed(my_str)
+
+if list(my_str) == list(rev_str):
+   print(&quot;The string is palindrome.&quot;)
+else:
+   print(&quot;The string is not palindrome.&quot;)
+
+&quot;&quot;&quot;practical:10(b)Write a program to read a string containing
+letters, each of which may be in either uppercase
+or lowercase, and return a tuple containing the
+number of vowels and consonants in the string.
+&quot;&quot;&quot;
+
+a=input(&#x27;enter a string:&#x27;)
+consonant=0
+vowel=0
+for i in a:
+  if(i==&quot;A&quot; or i==&quot;E&quot; or  i==&quot;I&quot; or i==&quot;O&quot; or i==&quot;U&quot; or i==&quot;a&quot; or i==&quot;e&quot; or i==&quot;i&quot; or i==&quot;o&quot; or i==&quot;u&quot;):
+    vowel=vowel+1
+  else:
+    consonant=consonant+1
+t1=tuple((&#x27;consonant:&#x27;,consonant,&quot;vowel:&quot;,vowel))
+print(t1)
+
+&quot;&quot;&quot;Practical-10(c)Write a program to read a date in the format
+
+DD/MM/YYYY and print the same date in MM-
+DD-YYYY format.
+&quot;&quot;&quot;
+
+def date():
+  d = input(&quot;Enter the Date in DD/MM/YYYY format = &quot;)
+  a = d.split(&quot;/&quot;)  # Corrected to split by &quot;/&quot;
+  print(&quot;Date in format MM-DD-YYYY = {}-{}-{}&quot;.format(a[1], a[0], a[2]))
+
+date()
+
+&quot;&quot;&quot;Practical-10(D)
+Write a program that checks whether two words
+are anagrams. Two words are anagrams if they
+contain the same letters. For example, silent and
+listen are anagrams.
+&quot;&quot;&quot;
+
+def anagram():
+  w1=input(&quot;enter word:&quot;)
+  w2=input(&quot;enter word:&quot;)
+  a=w1.lower()
+  b=w2.lower()
+  x=sorted(a)
+  y=sorted(b)
+  if x==y:
+    print(w1,&quot;and&quot;,w2,&quot;ARE ANAGRAM WORD&quot;)
+  else:
+    print(w1,&quot;and&quot;,w2,&quot;ARE NOT ANAGRAM WORD&quot;)
+anagram()
+
+&quot;&quot;&quot;Practical-10(E)Write a program that allows users to enter six-
+digit RGB color codes and converts them into
+
+base 10. In this format, the first two hexadecimal
+digits represent the amount of red, the second
+two the amount of green, and the last two the
+amount of blue. For example: If a user enters
+FF6347, then the output should be Red (255),
+Green (99) and Blue (71))
+
+&quot;&quot;&quot;
+
+def RGB():
+  code=input(&quot;ENTER THE RGB COLOR CODE=&quot;)
+  red=int(code[0:2],16)
+  green=int(code[2:4],16)
+  blue=int(code[4:6],16)
+  print(&quot;red=&quot;,red,&quot;green=&quot;,green,&quot;blue=&quot;,blue)
+
+RGB()
+
+&quot;&quot;&quot;Practical-10(f)
+Numerologists claim to be able to determine a
+person&#x27;s character traits based on the &quot;numeric
+value&quot; of a name. The value of a name is
+determined by summing up the values of the
+letters of the name, where &quot;a&quot; is 1 &quot;b&quot; is 2 &quot;c&quot; is
+3 and so on up to &quot;z&quot; being 26. For example, the
+name &quot;Python&quot; would have the value 16 + 25 +
+20 + 8 + 15 + 14 = 98. Write a program that
+calculates the numeric value of a name provided
+as input.
+&quot;&quot;&quot;
+
+def name_sum():
+  name=input(&quot;ENTER THE NAME=&quot;)
+  sum=0
+  for letter in name.lower():
+    print(letter,&quot;=&quot;,ord(letter)-96)
+    sum=sum+ord(letter)-96
+    print(&quot;letter&#x27;s sum=&quot;,sum)
+
+name_sum()
+
+a=&quot;vatsal&quot;
+x=a.ljust(11,&quot;o&quot;)
+print(x)
+
+ord(&quot;c&quot;)-96</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Practical 11</span>
+          <h3>File Handling</h3>
+        </div>
+        <button class="view-btn" data-target="code-8">View Programs</button>
+      </div>
+      <div id="code-8" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-8">Copy Code</button>
+        </div>
+        <pre id="copy-8"><code>&quot;&quot;&quot;11(A)  Write a program to perform the below operations on files:
+• Create a text file and write a string to it.
+• Read an entire text file.
+• Read a text file line by line.
+• Write a string to a file.
+• Write a list of strings to a file.
+• Count the number of lines, words in a file.
+
+&quot;&quot;&quot;
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%writefile &quot;test1.txt&quot;
+# hello
+# this is my first lines
+# this is my Second lines
+# how are you
+
+f=open(&quot;test1.txt&quot;,&quot;r&quot;)
+print(f.read())
+f.close()
+
+f=open(&quot;test1.txt&quot;,&quot;r&quot;)
+b=f.readlines()
+print(b)
+f.close()
+
+f=open(&quot;test1.txt&quot;,&quot;a&quot;)
+f.write(&quot;hello world 22&quot;)
+f=open(&quot;test1.txt&quot;,&quot;r&quot;)
+print(f.read())
+f.close()
+
+l=[&quot;hi &quot;,&quot;i am Bhumika &quot;,&quot;how are you?&quot;,&quot;no&quot;]
+f=open(&quot;test1.txt&quot;,&quot;a&quot;)
+for i in l:
+    f.write(i)
+f=open(&quot;test1.txt&quot;)
+print(f.read())
+f.close()
+
+f=open(&quot;test1.txt&quot;)
+c=f.readlines()
+a=[]
+b=[]
+for i in c:
+    b=i.split()
+    a.extend(b)
+print(&quot;number of lines&quot;,len(c))
+print(&quot;number of words&quot;,len(a))
+
+&quot;&quot;&quot;11(B) Write a program that reads a text file and counts the occurrences of each alphabet in the file. The program should prompt the user to enter the filename.&quot;&quot;&quot;
+
+from string import ascii_lowercase as alc
+files=input(&quot;enter file name=&quot;)
+f=open(files,&quot;r&quot;)
+a=f.read()
+
+for i in alc:
+    x=a.count(str(i))
+    print(i,&quot;is featured for &quot;,x,&quot;number of times&quot;)
+f.close()
+
+&quot;&quot;&quot;11(C) Write a program that reads a text file and displays all the numbers found in the file.&quot;&quot;&quot;
+
+files=input(&quot;enter  file name :&quot;)
+f=open(files,&quot;r&quot;)
+a=f.read()
+for i in range(10):
+    x=a.count(str(i))
+    print(i,&quot;is featured for&quot;,x,&quot;number of times in a string&quot;)
+
+a=&quot;h e l l o 1 2 &quot;
+x=a.find(&quot;l&quot;)
+print(x)
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%writefile &quot;test6.txt&quot;
+# 
+# Gujarat Technological.
+# fdofsjl lorem50
+#
+
+f=open(&quot;test6.txt&quot;,&quot;r&quot;, encoding=&#x27;utf-8&#x27;)
+c=f.read()
+a=[]
+b=[]
+y=0
+sent_length=0
+a=c.split()
+for i in a:
+    y+=len(i)
+num_of_sentence=c.split(&quot;.&quot;)
+for sentence in num_of_sentence:
+    sent_length+= len(sentence)
+avg_wordlen=y/len(a)
+avg_sentencelen=sent_length/len(num_of_sentence)
+
+print(&quot;Aver word length : &quot;,avg_wordlen)
+print(&quot;Aver sentence length : &quot;,avg_sentencelen)
+f.close()
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%writefile &quot;hello.txt&quot;
+# hello world
+
+# Commented out IPython magic to ensure Python compatibility.
+# %%writefile &quot;hello1.txt&quot;
+# Sky is the Limit
+
+H1=open(&quot;hello.txt&quot;,&quot;r&quot;)
+H2=open(&quot;hello1.txt&quot;,&quot;r&quot;)
+s1=H1.read()
+s2=H2.read()
+print(&quot;Contents of file 1 are:&quot;,s1)
+print(&quot;Contents of file 2 are:&quot;,s2,&quot;\n&quot;)
+s1=s1.replace(&quot; &quot;,&quot;&quot;)
+s2=s2.replace(&quot; &quot;,&quot;&quot;)
+op=&quot;&quot;
+size = len(s1) if len(s1) &gt; len(s2) else len(s2)
+for i in range(size):
+    if i&lt;len(s1):
+        op=op+s1[i]
+    if i&lt;len(s2):
+        op=op+s2[i]
+print(&quot;interelated file contents are: \n\n&quot;,op)</code></pre>
+      </div>
+    </article>
+    
+    <article class="program-card">
+      <div class="card-top">
+        <div>
+          <span class="program-number">Mini Project</span>
+          <h3>Scraping Google Results in Python</h3>
+        </div>
+        <button class="view-btn" data-target="code-9">View Programs</button>
+      </div>
+      <div id="code-9" class="code-box hidden">
+        <div class="code-header">
+          <span>Python Source Code</span>
+          <button class="copy-btn" data-copy="copy-9">Copy Code</button>
+        </div>
+        <pre id="copy-9"><code>&quot;&quot;&quot;**MINIPROJECT Scraping Google Results in PYTHON**&quot;&quot;&quot;
+
+import requests
+import fontstyle
+import bs4
+
+headers = {
+            &#x27;User-Agent&#x27;:&#x27;Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36&#x27;
+          }
+
+print()
+topic = fontstyle.apply(&#x27;Scraping Google Results in PYTHON&#x27;, &#x27;bold/WHITE/CYAN_BG&#x27;)
+print(topic)
+print()
+
+print()
+query = input(&quot;Enter your Query : &quot;)
+print()
+
+g = (&#x27;\033[3m&#x27;+&quot;Searching.....&quot;+&#x27;\033[0m&#x27;)
+print(&#x27;\033[1m&#x27;+(g)+&#x27;\033[0m&#x27;)
+
+print()
+print(&#x27;-&#x27;*100)
+print()
+
+url = &quot;https://www.google.com/search?q=&quot;+query
+
+google_search = requests.get(url,headers=headers)
+
+soup = bs4.BeautifulSoup( google_search.text , &quot;html.parser&quot; )
+
+heading_object=soup.find_all(&#x27;h3&#x27;)
+link = soup.find_all(&quot;div&quot;,{&quot;class&quot;:&quot;yuRUbf&quot;})
+
+for i,j in zip(link,heading_object):
+  print()
+  print(&#x27;\033[1m&#x27; + i.getText(&quot; \n &quot;) +&#x27;\033[0m&#x27;)
+  print()
+  print(&quot;-&quot;*100)</code></pre>
+      </div>
+    </article>
+    
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="section-heading">
+    <p>CONTACT</p>
+    <h2>Connect With My Programming World</h2>
+  </div>
+  <p>Upload this project to GitHub and add your GitHub profile or repository link here.</p>
+  <a class="primary-btn" href="https://github.com/" target="_blank" rel="noopener">Visit GitHub</a>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 JAC Programming World | Built with HTML, CSS and JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
